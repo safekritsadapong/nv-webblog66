@@ -1,3 +1,4 @@
+const Midterm = require('./controllers/midterm66')
 const UserController = require('./controllers/UserController')
 
 module.exports = (app) =>{
@@ -15,5 +16,11 @@ module.exports = (app) =>{
     
     //show by id
     app.get('/user/:userId', UserController.show)
+
+    app.post('/add1', Midterm.add1)
+
+    app.post('/Modulus', Midterm.Modulus)
+
+    app.post('/GCD', Midterm.GCD)
 
 }
